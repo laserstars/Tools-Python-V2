@@ -11,7 +11,7 @@ def calculatrice ():
                 continuer = False
 
             except:
-                print("Ceci n'est pas un chiffre/nombre.")
+                print("\nCeci n'est pas un chiffre/nombre.\n")
                 continue
 
             print("")
@@ -57,7 +57,7 @@ def calculatrice ():
                         continuer = False
 
                     except:
-                        print("Ceci n'est pas un chiffre/nombre.")
+                        print("\nCeci n'est pas un chiffre/nombre.\n")
                         continue
 
                 print("")
