@@ -34,9 +34,8 @@ def nombre_perdu ():
         if nombre_joueur_nombre_p_digit == True:
             nombre_joueur_nombre_p = int(nombre_joueur_nombre_p)
 
-        # elif nombre_joueur_nombre_p == 'Fin' or nombre_joueur_nombre_p == 'fin' or nombre_joueur_nombre_p == 'FIN' or nombre_joueur_nombre_p == 'F' or nombre_joueur_nombre_p == 'f':
-        # fin_partie_nombre_p = 0
-        # else:
+        elif nombre_joueur_nombre_p == 'Fin' or nombre_joueur_nombre_p == 'fin' or nombre_joueur_nombre_p == 'FIN' or nombre_joueur_nombre_p == 'F' or nombre_joueur_nombre_p == 'f':
+            fin_partie_nombre_p = 0
         while (nombre_joueur_nombre_p_digit == False or nombre_joueur_nombre_p < 0) and (
                 nombre_joueur_nombre_p != 'Fin' and nombre_joueur_nombre_p != 'fin' and nombre_joueur_nombre_p != 'FIN' and nombre_joueur_nombre_p != 'F' and nombre_joueur_nombre_p != 'f'):
 
