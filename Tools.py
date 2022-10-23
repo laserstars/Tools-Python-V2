@@ -5,6 +5,7 @@ from Fonctions.FonctionNombrePerdu import*
 from Fonctions.FonctionTranscodage import*
 from Fonctions.FonctionCalculatrice import*
 from Fonctions.FonctionGenPassword import*
+from Fonctions.FonctionMorpion import*
 
 Menu = 1
 
@@ -54,9 +55,11 @@ while Menu == 1:
 
             elif option == 2:
                 while fin_jeu == 1:
-                    print("0 -- Pierre, Feuille, Ciseaux")
-                    print("1 -- Trouver le Nombre perdu")
-                    print("2 -- Retour Menu\n")
+                    print("0 -- Retour Menu")
+                    print("1 -- Pierre, Feuille, Ciseaux")
+                    print("2 -- Trouver le Nombre perdu")
+                    print("3 -- Morpion 2 Joueurs")
+                    print("4 -- Morpion VS Ordinateur Facile\n")
 
                     option_jeu = input("Que faire ?\n")
 
@@ -65,12 +68,15 @@ while Menu == 1:
                     if option_jeu_digit == True:
                         option_jeu = int(option_jeu)
 
-                    while option_jeu_digit == False or option_jeu < 0 or option_jeu > 2:
+                    while option_jeu_digit == False or option_jeu < 0 or option_jeu > 4:
 
                         print("\nOpération impossible\n")
-                        print("0 -- Pierre, Feuille, Ciseaux")
-                        print("1 -- Trouver le Nombre perdu")
-                        print("2 -- Retour Menu")
+                        print("0 -- Retour Menu")
+                        print("1 -- Pierre, Feuille, Ciseaux")
+                        print("2 -- Trouver le Nombre perdu")
+                        print("3 -- Morpion 2 Joueurs")
+                        print("4 -- Morpion VS Ordinateur Facile")
+
                         option_jeu = input("\nQue faire ?\n")
 
                         option_jeu_digit = option_jeu.isdigit()
@@ -81,16 +87,20 @@ while Menu == 1:
                     if option_jeu_digit == True:
                         option_jeu = int(option_jeu)
 
-                    if option_jeu == 2:
+                    if option_jeu == 0:
                         fin_jeu = 0
 
-                    if (option > 2 or option < 0):
+                    if (option > 4 or option < 0):
                         print("\nOpération impossible, choisissé un bon chiffre.\n")
                     else:
-                        if option_jeu == 0:
+                        if option_jeu == 1:
                             pierre_feuille_ciseaux()
-                        elif option_jeu == 1:
+                        elif option_jeu == 2:
                             nombre_perdu()
+                        elif option_jeu == 3:
+                            morpion_2joueurs()
+                        elif option_jeu == 4:
+                            morpion_ordi_facile()
 
             elif option == 4:
                 Menu_transcodage = 1
