@@ -339,56 +339,46 @@ def morpion_ordi_facile():
                     if a == "-":
                         a = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 2:
                     if b == "-":
                         b = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 3:
                     if c == "-":
                         c = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 4:
                     if d == "-":
                         d = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 5:
                     if e == "-":
                         e = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 6:
                     if f == "-":
                         f = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 7:
                     if g == "-":
                         g = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 8:
                     if h == "-":
                         h = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
+
                 elif choix_ordi == 9:
                     if i == "-":
                         i = "O"
                         tours_joueur = 0
-                    else:
-                        print("Cette zone est déja occupée.")
             print("\nL'ordinateur a joué.")
         morpion_egalite = morpion_egalite + 1
 
@@ -469,7 +459,7 @@ def morpion_ordi_facile():
 
 
     if joueur1_gagne == 1:
-        print("\nBravo, Joueur 1 à gagné!")
+        print("\nBravo, tu as réussi à gagné!")
     elif joueur2_gagne == 1:
         print("\nDommage, l'ordinateur à gagné!")
     elif morpion_egalite == 9:
