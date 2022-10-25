@@ -1,4 +1,4 @@
-#2.0.2
+#2.1.1
 
 from Fonctions.FonctionPierreFC import*
 from Fonctions.FonctionNombrePerdu import*

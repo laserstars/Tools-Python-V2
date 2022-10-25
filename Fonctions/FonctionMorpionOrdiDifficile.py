@@ -136,6 +136,7 @@ def morpion_ordi_diffi():
                     elif d == e == "O" and f == "-":
                         f = "O"
                         tours_joueur = 0
+                        print("porbl1")
 
                     elif d == f == "O" and e == "-":
                         e = "O"
@@ -192,6 +193,7 @@ def morpion_ordi_diffi():
                     elif c == i == "O" and f == "-":
                         f = "O"
                         tours_joueur = 0
+                        print("porbl2")
 
                     elif f == i == "O" and c == "-":
                         c = "O"
@@ -224,106 +226,108 @@ def morpion_ordi_diffi():
                         tours_joueur = 0
 
                     # a - b - c
-                    elif a == b and c == "-":
+                    elif a == b != "-" and c == "-":
                         c = "O"
                         tours_joueur = 0
 
-                    elif a == c and b == "-":
+                    elif a == c != "-" and b == "-":
                         b = "O"
                         tours_joueur = 0
 
-                    elif b == c and a == "-":
+                    elif b == c != "-" and a == "-":
                         a = "O"
                         tours_joueur = 0
 
                     # d - e - f
-                    elif d == e and f == "-":
+                    elif d == e != "-" and f == "-":
                         f = "O"
                         tours_joueur = 0
+                        print("porbl3")
 
-                    elif d == f and e == "-":
+                    elif d == f != "-" and e == "-":
                         e = "O"
                         tours_joueur = 0
 
-                    elif f == e and d == "-":
+                    elif f == e != "-" and d == "-":
                         d = "O"
                         tours_joueur = 0
 
                     # g - h - i
-                    elif g == h and i == "-":
+                    elif g == h != "-" and i == "-":
                         i = "O"
                         tours_joueur = 0
 
-                    elif g == i and h == "-":
+                    elif g == i != "-" and h == "-":
                         h = "O"
                         tours_joueur = 0
 
-                    elif h == i and g == "-":
+                    elif h == i != "-" and g == "-":
                         g = "O"
                         tours_joueur = 0
 
                     # a - d - g
-                    elif a == d and g == "-":
+                    elif a == d != "-" and g == "-":
                         g = "O"
                         tours_joueur = 0
 
-                    elif a == g and d == "-":
+                    elif a == g != "-" and d == "-":
                         d = "O"
                         tours_joueur = 0
 
-                    elif d == g and a == "-":
+                    elif d == g != "-" and a == "-":
                         a = "O"
                         tours_joueur = 0
 
                     # b - e - h
-                    elif b == e and h == "-":
+                    elif b == e != "-" and h == "-":
                         h = "O"
                         tours_joueur = 0
 
-                    elif b == h and e == "-":
+                    elif b == h != "-" and e == "-":
                         e = "O"
                         tours_joueur = 0
 
-                    elif e == h and b == "-":
+                    elif e == h != "-" and b == "-":
                         b = "O"
                         tours_joueur = 0
 
                     # c - f - i
-                    elif c == f and i == "-":
+                    elif c == f != "-" and i == "-":
                         i = "O"
                         tours_joueur = 0
 
-                    elif c == i and f == "-":
+                    elif c == i != "-" and f == "-":
                         f = "O"
                         tours_joueur = 0
+                        print("porbl4")
 
-                    elif f == i and c == "-":
+                    elif f == i != "-" and c == "-":
                         c = "O"
                         tours_joueur = 0
 
                     # a - e - i
-                    elif a == e and i == "-":
+                    elif a == e != "-" and i == "-":
                         i = "O"
                         tours_joueur = 0
 
-                    elif a == i and e == "-":
+                    elif a == i != "-" and e == "-":
                         e = "O"
                         tours_joueur = 0
 
-                    elif e == i and a == "-":
+                    elif e == i != "-" and a == "-":
                         a = "O"
                         tours_joueur = 0
 
                     # c - e - g
-                    elif c == e and g == "-":
+                    elif c == e != "-" and g == "-":
                         g = "O"
                         tours_joueur = 0
 
-                    elif c == g and e == "-":
+                    elif c == g != "-" and e == "-":
                         e = "O"
                         tours_joueur = 0
 
-                    elif e == g and c == "-":
+                    elif e == g != "-" and c == "-":
                         c = "O"
                         tours_joueur = 0
 
@@ -371,6 +375,7 @@ def morpion_ordi_diffi():
                     elif a == i == d == f == h == "-" and e == "O" and b == "X" and c == "O" and g == "X":
                         f = "O"
                         tours_joueur = 0
+                        print("porbl5")
 
                     elif c == g == b == f == h == "-" and e == "O" and d == "X" and a == "O" and i == "X":
                         b = "O"
@@ -395,6 +400,7 @@ def morpion_ordi_diffi():
                     elif a == c == g == i == d == f == b == "-" and e == "O" and h == "X" and i == "O" and a == "X":
                         f = "O"
                         tours_joueur = 0
+                        print("porbl6")
 
                     elif b == d == e == c == g == "-" and a == "O" and ((f == h and i == "X") or (f == i and h == "X") or (i == h and f == "X")):
                         choix_ordi_ai = random.randint(1 , 2)
@@ -471,54 +477,379 @@ def morpion_ordi_diffi():
                         i = "O"
                         tours_joueur = 0
 
+                    elif a == b == c == d == f == h == i == "-" and e == "X" and g == "O":
+                        c = "O"
+                        tours_joueur = 0
+
+                    elif a == b == c == d == f == g == h == "-" and e == "X" and i == "O":
+                        a = "O"
+                        tours_joueur = 0
+
+                    elif a == b == d == f == g == h == i == "-" and e == "X" and c == "O":
+                        g = "O"
+                        tours_joueur = 0
+
+                    elif b == c == d == f == g == h == i == "-" and e == "X" and a == "O":
+                        i = "O"
+                        tours_joueur = 0
+
+                    elif g == c == "O" and e == "X" and a == b == d == "-":
+                        a = "O"
+                        tours_joueur = 0
+
+                    elif g == c == "O" and e == "X" and f == h == i == "-":
+                        i = "O"
+                        tours_joueur = 0
+
+                    elif a == i == "O" and e == "X" and b == c == f == "-":
+                        c = "O"
+                        tours_joueur = 0
+
+                    elif a == i == "O" and e == "X" and d == g == h == "-":
+                        g = "O"
+                        tours_joueur = 0
+
+                    elif a == b == c == d == f == g == h == i == "-" and e == "X":
+                        choix_ordi_ai = random.randint(1, 4)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "X"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 4:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif b == d == e == f == g == h == i == "-" and a == "X" and c == "O":
+                        g = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == g == h == c == "-" and a == "X" and i == "O":
+                        c = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == i == h == c == "-" and a == "X" and g == "O":
+                        c = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == g == h == i == "-" and c == "X" and a == "O":
+                        i = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == g == h == a == "-" and c == "X" and i == "O":
+                        a = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == i == h == a == "-" and c == "X" and g == "O":
+                        a = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == c == h == i == "-" and g == "X" and a == "O":
+                        i = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == i == h == a == "-" and g == "X" and c == "O":
+                        a = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == c == h == a == "-" and g == "X" and i == "O":
+                        a = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == c == h == g == "-" and i == "X" and a == "O":
+                        c = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == g == h == a == "-" and i == "X" and c == "O":
+                        g = "O"
+                        tours_joueur = 0
+
+                    elif b == d == e == f == c == h == a == "-" and i == "X" and g == "O":
+                        c = "O"
+                        tours_joueur = 0
+
+                    elif a == b == c == d == e == f == g == h == "-" and i == "X":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif a == b == d == e == f == g == h == i == "-" and c == "X":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif b == c == d == e == f == g == h == i == "-" and a == "X":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif a == b == c == d == e == f == h == i == "-" and g == "X":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            a = "O"
+                            tours_joueur = 0
+
+                    elif a == b == c == e == f ==i == "-":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif a == b == c == d == e ==g == "-":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif c == e == f == g == h == i == "-":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            i = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif a == d == e == g == h == i == "-":
+                        choix_ordi_ai = random.randint(1, 3)
+                        if choix_ordi_ai == 1:
+                            i = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif a == b == d == e == g == "-" and c == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif c == b == d == e == g == "-" and a == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif c == b == d == e == a == "-" and g == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            a = "O"
+                            tours_joueur = 0
+
+                    elif b == c == e == f == i == "-" and a == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif b == a == e == f == i == "-" and c == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif b == a == e == f == c == "-" and i == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            c = "O"
+                            tours_joueur = 0
+
+                    elif e == f == g == h == i == "-" and c == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            i = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif e == f == g == h == c == "-" and i == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            g = "O"
+                            tours_joueur = 0
+
+                    elif e == f == i == h == c == "-" and g == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            c = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif d == e == g == h == i == "-" and a == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            g = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif d == e == a == h == i == "-" and g == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            i = "O"
+                            tours_joueur = 0
+
+                    elif d == e == a == h == g == "-" and i == "O":
+                        choix_ordi_ai = random.randint(1, 2)
+                        if choix_ordi_ai == 1:
+                            a = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            g = "O"
+                            tours_joueur = 0
 
                     else:
-                        choix_ordi = random.randint(1, 9)
+                        choix_ordi_ai = random.randint(1, 9)
+                        if choix_ordi_ai == 1 and a == "-":
+                            a = "O"
+                            tours_joueur = 0
 
-                        if choix_ordi == 1:
-                            if a == "-":
-                                a = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 2 and b == "-":
+                            b = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 2:
-                            if b == "-":
-                                b = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 3 and c == "-":
+                            c = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 3:
-                            if c == "-":
-                                c = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 4 and d == "-":
+                            d = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 4:
-                            if d == "-":
-                                d = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 5 and e == "-":
+                            e = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 5:
-                            if e == "-":
-                                e = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 6 and f == "-":
+                            f = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 6:
-                            if f == "-":
-                                f = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 7 and g == "-":
+                            g = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 7:
-                            if g == "-":
-                                g = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 8 and h == "-":
+                            h = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 8:
-                            if h == "-":
-                                h = "O"
-                                tours_joueur = 0
+                        elif choix_ordi_ai == 9 and i == "-":
+                            i = "O"
+                            tours_joueur = 0
 
-                        elif choix_ordi == 9:
-                            if i == "-":
-                                i = "O"
-                                tours_joueur = 0
+
+
+
+
+
 
             print("\nL'ordinateur a joué.")
         morpion_egalite = morpion_egalite + 1
@@ -602,5 +933,3 @@ def morpion_ordi_diffi():
         print("\nDommage, l'ordinateur à gagné!")
     elif morpion_egalite == 9:
         print("\nDommage, il y a égalité!")
-
-morpion_ordi_diffi()
