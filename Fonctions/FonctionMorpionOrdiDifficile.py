@@ -331,6 +331,78 @@ def morpion_ordi_diffi():
                         c = "O"
                         tours_joueur = 0
 
+                    elif b == c == d == e == f == g == h == i == "-" and a == "X":
+                        choix_ordi_ai = random.randint(1, 4)
+                        if choix_ordi_ai == 1:
+                            b = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            d = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            f = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 4:
+                            h = "O"
+                            tours_joueur = 0
+
+                    elif b == a == d == e == f == g == h == i == "-" and c == "X":
+                        choix_ordi_ai = random.randint(1, 4)
+                        if choix_ordi_ai == 1:
+                            b = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            d = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            f = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 4:
+                            h = "O"
+                            tours_joueur = 0
+
+                    elif b == a == d == e == f == c == h == i == "-" and g == "X":
+                        choix_ordi_ai = random.randint(1, 4)
+                        if choix_ordi_ai == 1:
+                            b = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            d = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            f = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 4:
+                            h = "O"
+                            tours_joueur = 0
+
+                    elif b == a == d == e == f == c == h == g == "-" and i == "X":
+                        choix_ordi_ai = random.randint(1, 4)
+                        if choix_ordi_ai == 1:
+                            b = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 2:
+                            d = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 3:
+                            f = "O"
+                            tours_joueur = 0
+
+                        elif choix_ordi_ai == 4:
+                            h = "O"
+                            tours_joueur = 0
+
 
                     elif a == c == g == i == d == f == h == "-" and e == "O" and b == "X":
                         choix_ordi_ai = random.randint(1, 2)
